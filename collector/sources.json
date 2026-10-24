@@ -1,0 +1,97 @@
+{
+  "_comment": "Edit this file to add or remove sources. No code changes needed. A source that fails is skipped and reported on the site's status panel.",
+
+  "retention_days": 30,
+  "max_items_per_type": {
+    "paper": 1000,
+    "repo": 700,
+    "model": 400,
+    "tool": 400,
+    "news": 700
+  },
+
+  "arxiv": {
+    "enabled": true,
+    "categories": ["cs.AI", "cs.LG", "cs.CL", "cs.CV", "cs.IR", "stat.ML"],
+    "max_results": 150
+  },
+
+  "huggingface_papers": { "enabled": true },
+
+  "huggingface_models": { "enabled": true, "limit": 40 },
+
+  "huggingface_spaces": { "enabled": true, "limit": 30 },
+
+  "github": {
+    "enabled": true,
+    "lookback_days": 7,
+    "min_stars": 10,
+    "per_topic": 25,
+    "topics": [
+      "llm",
+      "machine-learning",
+      "deep-learning",
+      "data-science",
+      "ai-agents",
+      "generative-ai",
+      "rag",
+      "mcp",
+      "computer-vision",
+      "nlp"
+    ]
+  },
+
+  "hackernews": {
+    "enabled": true,
+    "show_hn_min_points": 15,
+    "news_min_points": 100,
+    "lookback_hours": 48
+  },
+
+  "ai_summaries": {
+    "_comment": "One-line AI summaries. GitHub Models is free and works with the workflow's built-in token. Gemini and Groq are optional free fallbacks: add GEMINI_API_KEY or GROQ_API_KEY as repository secrets. Providers are tried in order; within a provider, models are tried in order until one works.",
+    "enabled": true,
+    "types": ["repo", "tool", "news"],
+    "batch_size": 10,
+    "max_requests_per_run": 10,
+    "max_age_days": 7,
+    "providers": [
+      {
+        "name": "GitHub Models",
+        "endpoint": "https://models.github.ai/inference/chat/completions",
+        "key_env": "GITHUB_TOKEN",
+        "models": ["openai/gpt-4.1-mini", "openai/gpt-4o-mini", "meta/llama-3.3-70b-instruct", "microsoft/phi-4"],
+        "min_seconds_between_requests": 5
+      },
+      {
+        "name": "Google Gemini",
+        "endpoint": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+        "key_env": "GEMINI_API_KEY",
+        "models": ["gemini-flash-lite-latest", "gemini-flash-latest"],
+        "min_seconds_between_requests": 5
+      },
+      {
+        "name": "Groq",
+        "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+        "key_env": "GROQ_API_KEY",
+        "models": ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"],
+        "min_seconds_between_requests": 3
+      }
+    ]
+  },
+
+  "rss": [
+    { "name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml" },
+    { "name": "Google Research", "url": "https://research.google/blog/rss/" },
+    { "name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml" },
+    { "name": "OpenAI", "url": "https://openai.com/news/rss.xml" },
+    { "name": "Microsoft Research", "url": "https://www.microsoft.com/en-us/research/feed/" },
+    { "name": "AWS Machine Learning", "url": "https://aws.amazon.com/blogs/machine-learning/feed/" },
+    { "name": "Berkeley AI Research", "url": "https://bair.berkeley.edu/blog/feed.xml" },
+    { "name": "MIT Technology Review", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed" },
+    { "name": "KDnuggets", "url": "https://www.kdnuggets.com/feed" },
+    { "name": "Ahead of AI", "url": "https://magazine.sebastianraschka.com/feed" },
+    { "name": "Import AI", "url": "https://importai.substack.com/feed" },
+    { "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/" }
+  ]
+}

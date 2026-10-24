@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Changelog</title>
+  <meta name="description" content="A daily log of new AI and data science papers, GitHub repos, models, tools and news, each with a short description and a link.">
+  <meta name="theme-color" content="#E9EEF4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111722" media="(prefers-color-scheme: dark)">
+  <link rel="alternate" type="application/rss+xml" title="AI Changelog" href="data/feed.xml">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231B2433'/%3E%3Crect x='6' y='18' width='4' height='8' fill='%234C6EF5'/%3E%3Crect x='12' y='12' width='4' height='14' fill='%2337B24D'/%3E%3Crect x='18' y='8' width='4' height='18' fill='%23BE4BDB'/%3E%3Crect x='24' y='14' width='4' height='12' fill='%23F76707'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#feed">Skip to the feed</a>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand">
+        <h1>AI Changelog</h1>
+        <p class="tagline">What shipped in AI and data science, logged daily.</p>
+      </div>
+      <figure class="strip" aria-labelledby="strip-caption">
+        <div id="strip" class="strip-bars" role="list"></div>
+        <figcaption id="strip-caption">
+          <span id="strip-total">Last 14 days</span>
+          <span class="legend" id="legend"></span>
+        </figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="rail" aria-label="Filters">
+      <nav class="types" id="types" aria-label="Categories"></nav>
+
+      <div class="rail-group">
+        <h2 class="rail-title">Time range</h2>
+        <div class="seg" id="range" role="radiogroup" aria-label="Time range">
+          <button role="radio" data-range="1">24h</button>
+          <button role="radio" data-range="3">3 days</button>
+          <button role="radio" data-range="7">Week</button>
+          <button role="radio" data-range="30">Month</button>
+        </div>
+      </div>
+
+      <div class="rail-group">
+        <h2 class="rail-title">Sort by</h2>
+        <div class="seg" id="sort" role="radiogroup" aria-label="Sort order">
+          <button role="radio" data-sort="new">Newest</button>
+          <button role="radio" data-sort="top">Most popular</button>
+        </div>
+      </div>
+
+      <div class="rail-group">
+        <label class="check"><input type="checkbox" id="unseen"> Only what's new since my last visit</label>
+      </div>
+
+      <div class="rail-group">
+        <h2 class="rail-title"><label for="source">Source</label></h2>
+        <select id="source"><option value="">All sources</option></select>
+      </div>
+
+      <div class="rail-foot">
+        <a href="data/feed.xml">Subscribe via RSS</a>
+        <a id="repo-link" href="https://github.com/">Source code on GitHub</a>
+        <details id="health">
+          <summary>Source health</summary>
+          <ul id="health-list"></ul>
+        </details>
+      </div>
+    </aside>
+
+    <main id="feed" tabindex="-1">
+      <div class="toolbar">
+        <div class="search">
+          <svg aria-hidden="true" viewBox="0 0 20 20"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg>
+          <input id="q" type="search" placeholder="Search titles, descriptions, tags" aria-label="Search" autocomplete="off">
+          <kbd aria-hidden="true">/</kbd>
+        </div>
+        <button class="icon-btn" id="theme" aria-label="Switch color theme" title="Switch color theme">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3a7 7 0 1 0 7 7 5.5 5.5 0 0 1-7-7z"/></svg>
+        </button>
+      </div>
+      <p class="summary" id="summary" aria-live="polite"></p>
+      <div id="list"></div>
+      <div id="sentinel" aria-hidden="true"></div>
+    </main>
+  </div>
+
+  <footer class="site-foot">
+    <a href="data/feed.xml">Subscribe via RSS</a>
+    <a id="repo-link-m" href="https://github.com/">Source code on GitHub</a>
+    <span>Open source under the MIT License.</span>
+  </footer>
+
+  <template id="tpl-entry">
+    <article class="entry">
+      <div class="entry-head">
+        <span class="kind"></span>
+        <span class="src"></span>
+        <time></time>
+        <span class="fresh" hidden>New</span>
+      </div>
+      <h3 class="title"><a target="_blank" rel="noopener"></a></h3>
+      <p class="desc"></p>
+      <p class="authors" hidden></p>
+      <div class="entry-foot">
+        <ul class="tags"></ul>
+        <span class="score" hidden></span>
+        <span class="ai" hidden title="One-line summary written by an AI model from the source page">AI summary</span>
+        <a class="disc" target="_blank" rel="noopener" hidden>Discussion</a>
+        <button class="save" aria-pressed="false">Save</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

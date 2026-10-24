@@ -1,0 +1,71 @@
+name: Update feed
+
+on:
+  schedule:
+    # Every 6 hours (UTC). GitHub may delay scheduled runs by a few minutes.
+    - cron: "17 */6 * * *"
+  workflow_dispatch: {}          # "Run workflow" button in the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "collector/**"
+      - ".github/workflows/**"
+
+permissions:
+  contents: write                # commit refreshed data back to the repo
+  pages: write                   # deploy to GitHub Pages
+  id-token: write
+  models: read                   # free AI summaries via GitHub Models
+
+concurrency:
+  group: update-feed
+  cancel-in-progress: false
+
+jobs:
+  collect-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Collect new items
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional fallbacks for AI summaries; leave unset if you don't have them.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+        # A failed source never fails the run; only a run with zero items does.
+        run: python collector/collect.py || echo "Collector reported no new data; deploying existing site."
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update feed data $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
