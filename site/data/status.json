@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-24T20:42:45Z",
+ "sources": {
+  "arXiv": {
+   "ok": true,
+   "count": 150,
+   "ms": 2835
+  },
+  "Hugging Face Papers": {
+   "ok": true,
+   "count": 50,
+   "ms": 140
+  },
+  "Hugging Face Models": {
+   "ok": true,
+   "count": 40,
+   "ms": 73
+  },
+  "Hugging Face Spaces": {
+   "ok": true,
+   "count": 30,
+   "ms": 88
+  },
+  "GitHub": {
+   "ok": true,
+   "count": 91,
+   "ms": 29697
+  },
+  "Hacker News": {
+   "ok": true,
+   "count": 10,
+   "ms": 870
+  },
+  "Hugging Face Blog": {
+   "ok": true,
+   "count": 25,
+   "ms": 121
+  },
+  "Google Research": {
+   "ok": true,
+   "count": 11,
+   "ms": 270
+  },
+  "Google DeepMind": {
+   "ok": true,
+   "count": 9,
+   "ms": 328
+  },
+  "OpenAI": {
+   "ok": true,
+   "count": 64,
+   "ms": 148
+  },
+  "Microsoft Research": {
+   "ok": true,
+   "count": 10,
+   "ms": 635
+  },
+  "AWS Machine Learning": {
+   "ok": true,
+   "count": 20,
+   "ms": 143
+  },
+  "Berkeley AI Research": {
+   "ok": true,
+   "count": 0,
+   "ms": 342
+  },
+  "MIT Technology Review": {
+   "ok": true,
+   "count": 10,
+   "ms": 102
+  },
+  "KDnuggets": {
+   "ok": true,
+   "count": 10,
+   "ms": 80
+  },
+  "Ahead of AI": {
+   "ok": true,
+   "count": 2,
+   "ms": 240
+  },
+  "Import AI": {
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "Simon Willison": {
+   "ok": true,
+   "count": 30,
+   "ms": 164
+  },
+  "AI summaries": {
+   "ok": true,
+   "count": 0,
+   "note": "stopped early (rate limit or provider unavailable)",
+   "requests": 0
+  }
+ }
+}
