@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-10-24T20:46:35Z",
+ "generated_at": "2026-10-24T20:49:00Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 192
+   "ms": 215
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 175
+   "ms": 214
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 72
+   "ms": 83
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 107
+   "ms": 128
   },
   "GitHub": {
    "ok": true,
    "count": 91,
-   "ms": 28589
+   "ms": 29659
   },
   "Hacker News": {
    "ok": true,
    "count": 10,
-   "ms": 882
+   "ms": 619
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 25,
-   "ms": 136
+   "ms": 190
   },
   "Google Research": {
    "ok": true,
    "count": 11,
-   "ms": 2347
+   "ms": 383
   },
   "Google DeepMind": {
-   "ok": false,
-   "count": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "ok": true,
+   "count": 9,
+   "ms": 126
   },
   "OpenAI": {
    "ok": true,
    "count": 64,
-   "ms": 150
+   "ms": 177
   },
   "Microsoft Research": {
    "ok": true,
    "count": 10,
-   "ms": 574
+   "ms": 767
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 160
+   "ms": 108
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 0,
-   "ms": 499
+   "ms": 276
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 105
+   "ms": 104
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 116
+   "ms": 90
   },
   "Ahead of AI": {
    "ok": true,
    "count": 2,
-   "ms": 181
+   "ms": 187
   },
   "Import AI": {
    "ok": false,
@@ -89,21 +89,12 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 128
+   "ms": 155
   },
   "AI summaries": {
    "ok": false,
    "count": 0,
-   "note": "stopped early (rate limit or provider unavailable)",
-   "requests": 0,
-   "errors": [
-    "GitHub Models / openai/gpt-4.1-mini: unreadable reply (text/plain; 4 bytes): OK\r ",
-    "GitHub Models / openai/gpt-4o-mini: unreadable reply (text/plain; 4 bytes): OK\r ",
-    "GitHub Models / meta/llama-3.3-70b-instruct: unreadable reply (text/plain; 4 bytes): OK\r ",
-    "GitHub Models / microsoft/phi-4: unreadable reply (text/plain; 4 bytes): OK\r ",
-    "GitHub Models: no working models left"
-   ],
-   "error": "GitHub Models: no working models left"
+   "error": "No API key available (GEMINI_API_KEY, GROQ_API_KEY)"
   }
  }
 }
