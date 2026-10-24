@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-10-24T20:44:36Z",
+ "generated_at": "2026-10-24T20:46:35Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 184
+   "ms": 192
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 230
+   "ms": 175
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 75
+   "ms": 72
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 120
+   "ms": 107
   },
   "GitHub": {
    "ok": true,
    "count": 91,
-   "ms": 29677
+   "ms": 28589
   },
   "Hacker News": {
    "ok": true,
    "count": 10,
-   "ms": 1556
+   "ms": 882
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 25,
-   "ms": 113
+   "ms": 136
   },
   "Google Research": {
    "ok": true,
    "count": 11,
-   "ms": 274
+   "ms": 2347
   },
   "Google DeepMind": {
-   "ok": true,
-   "count": 9,
-   "ms": 158
+   "ok": false,
+   "count": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   "OpenAI": {
    "ok": true,
    "count": 64,
-   "ms": 168
+   "ms": 150
   },
   "Microsoft Research": {
    "ok": true,
    "count": 10,
-   "ms": 767
+   "ms": 574
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 157
+   "ms": 160
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 0,
-   "ms": 270
+   "ms": 499
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 111
+   "ms": 105
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 75
+   "ms": 116
   },
   "Ahead of AI": {
    "ok": true,
    "count": 2,
-   "ms": 230
+   "ms": 181
   },
   "Import AI": {
    "ok": false,
@@ -89,7 +89,7 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 102
+   "ms": 128
   },
   "AI summaries": {
    "ok": false,
@@ -97,10 +97,10 @@
    "note": "stopped early (rate limit or provider unavailable)",
    "requests": 0,
    "errors": [
-    "GitHub Models / openai/gpt-4.1-mini: JSONDecodeError",
-    "GitHub Models / openai/gpt-4o-mini: JSONDecodeError",
-    "GitHub Models / meta/llama-3.3-70b-instruct: JSONDecodeError",
-    "GitHub Models / microsoft/phi-4: JSONDecodeError",
+    "GitHub Models / openai/gpt-4.1-mini: unreadable reply (text/plain; 4 bytes): OK\r ",
+    "GitHub Models / openai/gpt-4o-mini: unreadable reply (text/plain; 4 bytes): OK\r ",
+    "GitHub Models / meta/llama-3.3-70b-instruct: unreadable reply (text/plain; 4 bytes): OK\r ",
+    "GitHub Models / microsoft/phi-4: unreadable reply (text/plain; 4 bytes): OK\r ",
     "GitHub Models: no working models left"
    ],
    "error": "GitHub Models: no working models left"
