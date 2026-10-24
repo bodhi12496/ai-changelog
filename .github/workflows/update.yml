@@ -16,7 +16,6 @@ permissions:
   contents: write                # commit refreshed data back to the repo
   pages: write                   # deploy to GitHub Pages
   id-token: write
-  models: read                   # free AI summaries via GitHub Models
 
 concurrency:
   group: update-feed
@@ -39,7 +38,7 @@ jobs:
       - name: Collect new items
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Optional fallbacks for AI summaries; leave unset if you don't have them.
+          # Free API keys for AI summaries (add as repository secrets; either one is enough).
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}

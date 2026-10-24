@@ -5,8 +5,8 @@ fresh research papers, new GitHub repositories, trending models, tools and demos
 and news. Each entry has a short description and a link to the original.
 
 It runs entirely on GitHub for free: a scheduled GitHub Action collects new items
-every 6 hours and publishes a static site to GitHub Pages. No server, database or
-API keys needed.
+every 6 hours and publishes a static site to GitHub Pages. No server or database
+needed; an optional free API key adds AI-written summaries.
 
 ## What it collects
 
@@ -66,42 +66,37 @@ or Vercel. Point the host at the repo with **no build command** and **`site`** a
 output directory. Keep the GitHub Action running so the data keeps updating; the
 host redeploys on each data commit.
 
-## AI summaries (free, no signup)
+## AI summaries (free API key)
 
 Repos, tools and news items get a one-sentence summary written by an AI model.
 For repos it reads the README, and for Hacker News links it reads the linked page,
 so the summary says what the thing actually is. Summaries are marked
 **AI summary** on the site; hover the label to see the original description.
 
-**It works out of the box.** The default provider is
-[GitHub Models](https://github.com/marketplace/models), which is free for personal
-accounts and open-source projects. Inside GitHub Actions it uses the workflow's
-built-in token (the workflow already grants `models: read`), so there is no key to
-create.
-
-Budget: each run sends at most 10 requests of 10 items each, spaced 5 seconds
-apart, which stays well inside GitHub Models' free daily limit for small models.
-Each item is summarised once and the summary is kept, so later runs only pay for
-new items. If the limit is reached mid-run, the remaining items wait for the next
-run.
-
-**Optional backups.** If GitHub Models isn't available to you (for example, an
-organisation that has disabled it), add either of these free keys as a repository
-secret under **Settings → Secrets and variables → Actions → New repository secret**:
+Summaries need one free API key, saved as a repository secret under
+**Settings → Secrets and variables → Actions → New repository secret**.
+Either one is enough; if you add both, Gemini is tried first.
 
 | Secret name | Where to get it |
 | --- | --- |
 | `GEMINI_API_KEY` | [Google AI Studio](https://aistudio.google.com/apikey); free tier, no credit card |
 | `GROQ_API_KEY` | [GroqCloud console](https://console.groq.com/keys); free tier |
 
-Providers are tried in order (GitHub Models, then Gemini, then Groq), and within
-each provider the models listed in `sources.json` are tried until one works. Free
-model names change over time; if every model fails, the **AI summaries** line in
-**Source health** says so, and you can update the `models` list. To switch
-summaries off, set `"enabled": false` under `ai_summaries` in `sources.json`.
+Without a key the site works normally, just without AI summaries.
 
-Note that free tiers may use what you send to improve the provider's products.
-That's fine here, since everything sent is already public.
+Budget: each run sends at most 10 requests of 10 items each, spaced a few seconds
+apart (about 40 requests a day), which fits inside both free tiers. Each item is
+summarised once and the summary is kept, so later runs only pay for new items.
+If a limit is reached mid-run, the remaining items wait for the next run.
+
+Free model names change over time. Within each provider, the models listed in
+`sources.json` are tried in order until one works; if all fail, the
+**AI summaries** line in **Source health** says why, and you can update the
+`models` list. To switch summaries off, set `"enabled": false` under
+`ai_summaries` in `sources.json`.
+
+Free tiers may use what you send to improve the provider's products. That's fine
+here, since everything sent is already public.
 
 ## Customise
 

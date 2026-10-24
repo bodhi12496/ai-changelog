@@ -376,7 +376,7 @@
       a.textContent = name;
       const b = document.createElement("span");
       if (s.ok) b.textContent = `${s.count} new`;
-      else { b.textContent = "failed"; b.className = "bad"; li.title = s.error || ""; }
+      else { b.textContent = /No API key/.test(s.error || "") ? "needs API key" : "failed"; b.className = "bad"; li.title = s.error || ""; }
       li.append(a, b);
       els.health.append(li);
     }

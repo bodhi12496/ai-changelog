@@ -49,7 +49,7 @@
   },
 
   "ai_summaries": {
-    "_comment": "One-line AI summaries. GitHub Models is free and works with the workflow's built-in token. Gemini and Groq are optional free fallbacks: add GEMINI_API_KEY or GROQ_API_KEY as repository secrets. Providers are tried in order; within a provider, models are tried in order until one works.",
+    "_comment": "One-line AI summaries. Add a free GEMINI_API_KEY (Google AI Studio) and/or GROQ_API_KEY (GroqCloud) as repository secrets. Providers are tried in order; within a provider, models are tried in order until one works. Without any key the site still works, just without AI summaries.",
     "enabled": true,
     "types": ["repo", "tool", "news"],
     "batch_size": 10,
@@ -57,24 +57,17 @@
     "max_age_days": 7,
     "providers": [
       {
-        "name": "GitHub Models",
-        "endpoint": "https://models.github.ai/inference/chat/completions",
-        "key_env": "GITHUB_TOKEN",
-        "models": ["openai/gpt-4.1-mini", "openai/gpt-4o-mini", "meta/llama-3.3-70b-instruct", "microsoft/phi-4"],
-        "min_seconds_between_requests": 5
-      },
-      {
         "name": "Google Gemini",
         "endpoint": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
         "key_env": "GEMINI_API_KEY",
-        "models": ["gemini-flash-lite-latest", "gemini-flash-latest"],
+        "models": ["gemini-flash-lite-latest", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-flash-latest"],
         "min_seconds_between_requests": 5
       },
       {
         "name": "Groq",
         "endpoint": "https://api.groq.com/openai/v1/chat/completions",
         "key_env": "GROQ_API_KEY",
-        "models": ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"],
+        "models": ["llama-3.3-70b-versatile", "openai/gpt-oss-20b", "llama-3.1-8b-instant"],
         "min_seconds_between_requests": 3
       }
     ]

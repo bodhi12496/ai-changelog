@@ -1,11 +1,9 @@
 """
 AI-written one-line summaries for repos, tools and news.
 
-Works with any OpenAI-compatible chat API. The default provider is GitHub
-Models, which is free and needs no signup when run inside GitHub Actions:
-the workflow's built-in GITHUB_TOKEN has access once the workflow grants
-`models: read`. Gemini and Groq (both have free tiers) are optional
-fallbacks; add GEMINI_API_KEY or GROQ_API_KEY as repository secrets to use them.
+Works with any OpenAI-compatible chat API. Configured providers are Google
+Gemini and Groq, both of which have free tiers: add GEMINI_API_KEY and/or
+GROQ_API_KEY as repository secrets. Without a key, summaries are skipped.
 
 Each item is summarised once and the result is kept in items.json, so later
 runs only pay for new items. Requests are batched and spaced out to stay
