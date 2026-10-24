@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-10-24T20:42:45Z",
+ "generated_at": "2026-10-24T20:44:36Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 2835
+   "ms": 184
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 140
+   "ms": 230
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 73
+   "ms": 75
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 88
+   "ms": 120
   },
   "GitHub": {
    "ok": true,
    "count": 91,
-   "ms": 29697
+   "ms": 29677
   },
   "Hacker News": {
    "ok": true,
    "count": 10,
-   "ms": 870
+   "ms": 1556
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 25,
-   "ms": 121
+   "ms": 113
   },
   "Google Research": {
    "ok": true,
    "count": 11,
-   "ms": 270
+   "ms": 274
   },
   "Google DeepMind": {
    "ok": true,
    "count": 9,
-   "ms": 328
+   "ms": 158
   },
   "OpenAI": {
    "ok": true,
    "count": 64,
-   "ms": 148
+   "ms": 168
   },
   "Microsoft Research": {
    "ok": true,
    "count": 10,
-   "ms": 635
+   "ms": 767
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 143
+   "ms": 157
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 0,
-   "ms": 342
+   "ms": 270
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 102
+   "ms": 111
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 80
+   "ms": 75
   },
   "Ahead of AI": {
    "ok": true,
    "count": 2,
-   "ms": 240
+   "ms": 230
   },
   "Import AI": {
    "ok": false,
@@ -89,13 +89,21 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 164
+   "ms": 102
   },
   "AI summaries": {
-   "ok": true,
+   "ok": false,
    "count": 0,
    "note": "stopped early (rate limit or provider unavailable)",
-   "requests": 0
+   "requests": 0,
+   "errors": [
+    "GitHub Models / openai/gpt-4.1-mini: JSONDecodeError",
+    "GitHub Models / openai/gpt-4o-mini: JSONDecodeError",
+    "GitHub Models / meta/llama-3.3-70b-instruct: JSONDecodeError",
+    "GitHub Models / microsoft/phi-4: JSONDecodeError",
+    "GitHub Models: no working models left"
+   ],
+   "error": "GitHub Models: no working models left"
   }
  }
 }
