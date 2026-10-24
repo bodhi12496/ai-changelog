@@ -199,16 +199,24 @@ class Summarizer:
             }).encode()
             req = urllib.request.Request(p["endpoint"], data=body, method="POST", headers={
                 "Content-Type": "application/json",
+                "Accept": "application/json",
                 "Authorization": f"Bearer {os.environ[p['key_env']]}",
                 "User-Agent": USER_AGENT,
             })
             self.last_call = time.time()
             try:
                 with urllib.request.urlopen(req, timeout=90) as r:
-                    data = json.loads(r.read().decode("utf-8"))
+                    raw = r.read()
+                    ctype = r.headers.get("Content-Type", "")
+                    enc = r.headers.get("Content-Encoding", "")
+                content = _extract_content(raw, enc)
+                if content is None:
+                    snippet = raw[:160].decode("utf-8", "replace").replace("\n", " ")
+                    self._next_model(f"unreadable reply ({ctype or 'no content-type'}; {len(raw)} bytes): {snippet}")
+                    continue
                 self.requests += 1
                 self.used_models.add(f"{p['name']} / {model}")
-                return data["choices"][0]["message"]["content"] or ""
+                return content
             except urllib.error.HTTPError as e:
                 detail = e.read(400).decode("utf-8", "replace") if e.fp else ""
                 if e.code == 429:
@@ -226,6 +234,36 @@ class Summarizer:
             except (urllib.error.URLError, TimeoutError, KeyError, ValueError) as e:
                 self._next_model(f"{type(e).__name__}")
         raise ProviderExhausted()
+
+
+def _extract_content(raw: bytes, encoding: str = "") -> str | None:
+    """Message text from a chat-completions reply (plain JSON, gzip, or SSE stream)."""
+    if encoding == "gzip" or raw[:2] == b"\x1f\x8b":
+        import gzip
+        try:
+            raw = gzip.decompress(raw)
+        except OSError:
+            return None
+    text = raw.decode("utf-8", "replace").strip()
+    try:
+        data = json.loads(text)
+        msg = data["choices"][0].get("message") or {}
+        return msg.get("content") or ""
+    except (ValueError, KeyError, IndexError, TypeError, AttributeError):
+        pass
+    # Server-sent events: "data: {...}" lines with delta chunks.
+    parts = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line.startswith("data:") or line.endswith("[DONE]"):
+            continue
+        try:
+            chunk = json.loads(line[5:].strip())
+            choice = chunk["choices"][0]
+            parts.append((choice.get("delta") or choice.get("message") or {}).get("content") or "")
+        except (ValueError, KeyError, IndexError, TypeError):
+            continue
+    return "".join(parts) if parts else None
 
 
 def parse_summaries(text: str) -> dict:
