@@ -36,17 +36,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Configure Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
       - name: Collect new items
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Optional fallbacks for AI summaries; leave unset if you don't have them.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
         # A failed source never fails the run; only a run with zero items does.
         run: python collector/collect.py || echo "Collector reported no new data; deploying existing site."
 
@@ -61,6 +57,10 @@ jobs:
             git commit -m "Update feed data $(date -u +'%Y-%m-%d %H:%M UTC')"
             git push
           fi
+
+      # Needs Settings -> Pages -> Source: "GitHub Actions" (one-time setup).
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
