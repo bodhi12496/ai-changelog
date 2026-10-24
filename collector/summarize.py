@@ -156,6 +156,7 @@ class Summarizer:
         self.requests = 0
         self.last_call = 0.0
         self.used_models: set[str] = set()
+        self.errors: list[str] = []
 
     @property
     def available(self) -> bool:
@@ -167,6 +168,7 @@ class Summarizer:
 
     def _next_model(self, why: str):
         p, m = self._current()
+        self.errors.append(f"{p['name']} / {m}: {why}"[:200])
         self.log(f"    {p['name']} / {m}: {why}; trying next model")
         self.m_idx += 1
         if self.m_idx >= len(p["models"]):
@@ -174,6 +176,7 @@ class Summarizer:
 
     def _next_provider(self, why: str):
         p = self.providers[self.p_idx]
+        self.errors.append(f"{p['name']}: {why}"[:200])
         self.log(f"    {p['name']}: {why}; switching provider")
         self.p_idx += 1
         self.m_idx = 0
@@ -213,9 +216,9 @@ class Summarizer:
                     if retry and retry.isdigit() and int(retry) <= 30:
                         time.sleep(int(retry) + 1)
                         continue
-                    self._next_provider("rate limit reached")
+                    self._next_provider(f"rate limit reached {detail[:100]}")
                 elif e.code in (401, 403):
-                    self._next_provider(f"not authorised ({e.code})")
+                    self._next_provider(f"not authorised ({e.code}) {detail[:120]}")
                 elif e.code in (400, 404, 422):
                     self._next_model(f"HTTP {e.code} {detail[:120]}")
                 else:
@@ -315,6 +318,11 @@ def summarize_items(items: list[dict], cfg: dict, log=print) -> dict:
 
     stats["count"] = done
     stats["requests"] = s.requests
+    if s.errors:
+        stats["errors"] = s.errors[:8]
+    if s.requests == 0 and s.errors:
+        stats["ok"] = False
+        stats["error"] = s.errors[-1]
     if s.used_models:
         stats["model"] = ", ".join(sorted(s.used_models))
     log(f"  ok   {'AI summaries':<28} {done:>4} items ({s.requests} requests)")
