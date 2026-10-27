@@ -1,45 +1,45 @@
 {
- "generated_at": "2026-10-27T05:12:01Z",
+ "generated_at": "2026-10-27T12:19:33Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 672
+   "ms": 858
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 159
+   "ms": 180
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 90
+   "ms": 75
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 126
+   "ms": 93
   },
   "GitHub": {
    "ok": true,
-   "count": 90,
-   "ms": 28518
+   "count": 91,
+   "ms": 31016
   },
   "Hacker News": {
    "ok": true,
-   "count": 17,
-   "ms": 759
+   "count": 16,
+   "ms": 794
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 25,
-   "ms": 190
+   "ms": 143
   },
   "Google Research": {
    "ok": true,
    "count": 11,
-   "ms": 459
+   "ms": 371
   },
   "Google DeepMind": {
    "ok": false,
@@ -49,37 +49,37 @@
   "OpenAI": {
    "ok": true,
    "count": 68,
-   "ms": 131
+   "ms": 184
   },
   "Microsoft Research": {
    "ok": true,
    "count": 10,
-   "ms": 605
+   "ms": 755
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 238
+   "ms": 168
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 0,
-   "ms": 350
+   "ms": 468
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 148
+   "ms": 80
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 87
+   "ms": 99
   },
   "Ahead of AI": {
    "ok": true,
    "count": 2,
-   "ms": 264
+   "ms": 179
   },
   "Import AI": {
    "ok": false,
@@ -89,7 +89,7 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 113
+   "ms": 181
   },
   "AI summaries": {
    "ok": false,
