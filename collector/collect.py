@@ -196,6 +196,8 @@ def parse_arxiv(xml_bytes: bytes) -> list[dict]:
             tags=cats,
             authors=authors,
         ))
+        # Full abstract, used only as input for the AI summary; stripped before saving.
+        out[-1]["_abstract"] = clean_text(e.findtext(f"{ATOM}summary"))[:2000]
     return out
 
 
@@ -503,6 +505,8 @@ def merge(existing: list[dict], fresh: list[dict], cfg: dict) -> list[dict]:
                 merged["description"] = it["description"]
         if not merged.get("description"):
             merged["description"] = it.get("description", "")
+        if it.get("_abstract") and "ai_summary" not in merged:
+            merged["_abstract"] = it["_abstract"]
         by_id[it["id"]] = merged
 
     cutoff = NOW - timedelta(days=cfg.get("retention_days", 30))
@@ -615,6 +619,9 @@ def main() -> int:
     if not items:
         print("No items collected; leaving existing data untouched.", file=sys.stderr)
         return 1
+
+    for it in items:
+        it.pop("_abstract", None)   # summary input only; keeps items.json small
 
     ITEMS_PATH.write_text(json.dumps(
         {"generated_at": iso(NOW), "count": len(items), "items": items},

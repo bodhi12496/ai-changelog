@@ -51,9 +51,9 @@
   "ai_summaries": {
     "_comment": "One-line AI summaries. Add a free GEMINI_API_KEY (Google AI Studio) and/or GROQ_API_KEY (GroqCloud) as repository secrets. Providers are tried in order; within a provider, models are tried in order until one works. Without any key the site still works, just without AI summaries.",
     "enabled": true,
-    "types": ["repo", "tool", "news"],
+    "types": ["repo", "tool", "news", "paper"],
     "batch_size": 10,
-    "max_requests_per_run": 10,
+    "max_requests_per_run": 25,
     "max_age_days": 7,
     "providers": [
       {

@@ -68,9 +68,11 @@ host redeploys on each data commit.
 
 ## AI summaries (free API key)
 
-Repos, tools and news items get a one-sentence summary written by an AI model.
-For repos it reads the README, and for Hacker News links it reads the linked page,
-so the summary says what the thing actually is. Summaries are marked
+Repos, tools, news items and arXiv papers get a one-sentence summary written by an
+AI model. For repos it reads the README, for Hacker News links it reads the linked
+page, and for papers it reads the full abstract, so the summary says what the thing
+actually is (for papers: what they propose or find, not the background problem).
+Hugging Face Papers already come with their own AI summary and are left as they are. Summaries are marked
 **AI summary** on the site; hover the label to see the original description.
 
 Summaries need one free API key, saved as a repository secret under
@@ -84,8 +86,9 @@ Either one is enough; if you add both, Gemini is tried first.
 
 Without a key the site works normally, just without AI summaries.
 
-Budget: each run sends at most 10 requests of 10 items each, spaced a few seconds
-apart (about 40 requests a day), which fits inside both free tiers. Each item is
+Budget: each run sends at most 25 requests of 10 items each, spaced a few seconds
+apart (at most about 100 requests a day), which fits inside both free tiers. Repos,
+tools and news are summarised first; papers fill the remaining budget. Each item is
 summarised once and the summary is kept, so later runs only pay for new items.
 If a limit is reached mid-run, the remaining items wait for the next run.
 

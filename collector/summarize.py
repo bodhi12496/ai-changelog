@@ -27,6 +27,7 @@ USER_AGENT = "ai-changelog/1.0 (open-source AI news aggregator)"
 SYSTEM_PROMPT = """You write one-line summaries for a public feed of new AI and data science items.
 
 For each item, write ONE plain-English sentence of 12 to 28 words that says what it is and what it is useful for.
+For research papers, say what the paper proposes or finds (the method and the main result), not the background problem it starts from.
 Rules:
 - Use only facts stated in the provided text. Never invent numbers, benchmarks, names or claims.
 - Start with the subject or an action, e.g. "Open-source library that..." or "OpenAI releases...". Do not start with "This repository", "This article" or "The author".
@@ -126,6 +127,8 @@ def readme_text(full_name: str, token: str | None, limit: int = 1500) -> str:
 def build_context(it: dict, gh_token: str | None) -> str:
     """Best available text describing the item, for the model to summarise."""
     base = it.get("description") or ""
+    if it["type"] == "paper":
+        return f"Abstract: {it.get('_abstract', '')}".strip() if it.get("_abstract") else ""
     if it["type"] == "repo" and it["id"].startswith("gh:"):
         extra = readme_text(it["title"], gh_token)
         return f"Repo description: {base}\nREADME excerpt: {extra}".strip()
@@ -314,8 +317,16 @@ def summarize_items(items: list[dict], cfg: dict, log=print) -> dict:
             return True
         return seen >= cutoff
 
-    todo = [it for it in items
-            if it["type"] in types and "ai_summary" not in it and fresh(it)]
+    def wanted(it):
+        if it["type"] not in types or "ai_summary" in it or not fresh(it):
+            return False
+        if it["type"] == "paper":
+            # Only arXiv papers collected this run (full abstract in hand). Hugging Face
+            # Papers already come with their own AI summary.
+            return it.get("source") == "arXiv" and bool(it.get("_abstract"))
+        return True
+
+    todo = [it for it in items if wanted(it)]
     todo.sort(key=lambda it: it.get("score") or 0, reverse=True)   # most popular first
     todo = todo[:max_items]
     if not todo:
