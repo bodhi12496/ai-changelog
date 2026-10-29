@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-10-29T13:09:40Z",
+ "generated_at": "2026-10-29T22:48:43Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 762
+   "ms": 869
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 102
+   "ms": 207
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 23
+   "ms": 125
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 34
+   "ms": 150
   },
   "GitHub": {
    "ok": true,
-   "count": 79,
-   "ms": 28790
+   "count": 99,
+   "ms": 29086
   },
   "Hacker News": {
    "ok": true,
-   "count": 14,
-   "ms": 596
+   "count": 12,
+   "ms": 588
   },
   "Hugging Face Blog": {
    "ok": true,
-   "count": 24,
-   "ms": 95
+   "count": 26,
+   "ms": 178
   },
   "Google Research": {
    "ok": true,
-   "count": 12,
-   "ms": 239
+   "count": 11,
+   "ms": 362
   },
   "Google DeepMind": {
-   "ok": true,
-   "count": 11,
-   "ms": 145
+   "ok": false,
+   "count": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   "OpenAI": {
    "ok": true,
-   "count": 70,
-   "ms": 140
+   "count": 72,
+   "ms": 136
   },
   "Microsoft Research": {
    "ok": true,
    "count": 9,
-   "ms": 483
+   "ms": 695
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 90
+   "ms": 158
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 0,
-   "ms": 586
+   "ms": 229
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 57
+   "ms": 223
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 41
+   "ms": 142
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 112
+   "ms": 146
   },
   "Import AI": {
    "ok": false,
@@ -89,12 +89,12 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 215
+   "ms": 226
   },
   "AI summaries": {
    "ok": true,
-   "count": 8,
-   "requests": 1,
+   "count": 33,
+   "requests": 5,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
