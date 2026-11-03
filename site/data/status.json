@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-11-03T01:02:09Z",
+ "generated_at": "2026-11-03T14:24:14Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 78957
+   "ms": 954
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 161
+   "ms": 86
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 79
+   "ms": 35
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 87
+   "ms": 54
   },
   "GitHub": {
    "ok": true,
-   "count": 80,
-   "ms": 29394
+   "count": 85,
+   "ms": 28691
   },
   "Hacker News": {
    "ok": true,
-   "count": 19,
-   "ms": 932
+   "count": 21,
+   "ms": 562
   },
   "Hugging Face Blog": {
    "ok": true,
-   "count": 23,
-   "ms": 139
+   "count": 24,
+   "ms": 98
   },
   "Google Research": {
    "ok": true,
    "count": 10,
-   "ms": 196
+   "ms": 197
   },
   "Google DeepMind": {
-   "ok": true,
-   "count": 10,
-   "ms": 139
+   "ok": false,
+   "count": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   "OpenAI": {
    "ok": true,
-   "count": 74,
-   "ms": 170
+   "count": 77,
+   "ms": 147
   },
   "Microsoft Research": {
    "ok": true,
    "count": 9,
-   "ms": 825
+   "ms": 502
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 105
+   "ms": 77
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 0,
-   "ms": 151
+   "ms": 451
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 116
+   "ms": 38
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 104
+   "ms": 67
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 213
+   "ms": 164
   },
   "Import AI": {
    "ok": false,
@@ -89,12 +89,12 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 416
+   "ms": 170
   },
   "AI summaries": {
    "ok": true,
-   "count": 19,
-   "requests": 4,
+   "count": 156,
+   "requests": 17,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
