@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-11-06T06:54:32Z",
+ "generated_at": "2026-11-06T19:28:04Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 677
+   "ms": 752
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 256
+   "ms": 103
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 111
+   "ms": 34
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 132
+   "ms": 49
   },
   "GitHub": {
    "ok": true,
    "count": 97,
-   "ms": 29139
+   "ms": 28950
   },
   "Hacker News": {
    "ok": true,
-   "count": 22,
-   "ms": 1510
+   "count": 16,
+   "ms": 477
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 27,
-   "ms": 223
+   "ms": 91
   },
   "Google Research": {
    "ok": true,
    "count": 10,
-   "ms": 325
+   "ms": 210
   },
   "Google DeepMind": {
-   "ok": false,
-   "count": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "ok": true,
+   "count": 11,
+   "ms": 103
   },
   "OpenAI": {
    "ok": true,
    "count": 86,
-   "ms": 127
+   "ms": 136
   },
   "Microsoft Research": {
    "ok": true,
-   "count": 10,
-   "ms": 886
+   "count": 9,
+   "ms": 750
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 200
+   "ms": 154
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 0,
-   "ms": 226
+   "ms": 455
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 239
+   "ms": 31
   },
   "KDnuggets": {
-   "ok": true,
-   "count": 10,
-   "ms": 155
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 134
+   "ms": 94
   },
   "Import AI": {
    "ok": false,
@@ -89,12 +89,12 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 87
+   "ms": 54
   },
   "AI summaries": {
    "ok": true,
-   "count": 166,
-   "requests": 17,
+   "count": 14,
+   "requests": 3,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
