@@ -1,45 +1,45 @@
 {
- "generated_at": "2026-11-05T20:00:23Z",
+ "generated_at": "2026-11-06T06:54:32Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 6168
+   "ms": 677
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 241
+   "ms": 256
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 109
+   "ms": 111
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 151
+   "ms": 132
   },
   "GitHub": {
    "ok": true,
    "count": 97,
-   "ms": 28426
+   "ms": 29139
   },
   "Hacker News": {
    "ok": true,
-   "count": 21,
-   "ms": 1993
+   "count": 22,
+   "ms": 1510
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 27,
-   "ms": 250
+   "ms": 223
   },
   "Google Research": {
    "ok": true,
    "count": 10,
-   "ms": 871
+   "ms": 325
   },
   "Google DeepMind": {
    "ok": false,
@@ -48,38 +48,38 @@
   },
   "OpenAI": {
    "ok": true,
-   "count": 82,
-   "ms": 133
+   "count": 86,
+   "ms": 127
   },
   "Microsoft Research": {
    "ok": true,
    "count": 10,
-   "ms": 2195
+   "ms": 886
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 182
+   "ms": 200
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 0,
-   "ms": 203
+   "ms": 226
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 223
+   "ms": 239
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 145
+   "ms": 155
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 124
+   "ms": 134
   },
   "Import AI": {
    "ok": false,
@@ -89,16 +89,13 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 192
+   "ms": 87
   },
   "AI summaries": {
    "ok": true,
-   "count": 25,
-   "requests": 4,
-   "errors": [
-    "Google Gemini / gemini-flash-lite-latest: HTTP 503"
-   ],
-   "model": "Google Gemini / gemini-3.5-flash-lite, Google Gemini / gemini-flash-lite-latest"
+   "count": 166,
+   "requests": 17,
+   "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
 }
