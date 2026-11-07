@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-11-07T06:05:58Z",
+ "generated_at": "2026-11-07T13:10:09Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 1465
+   "ms": 918
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 190
+   "ms": 130
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 123
+   "ms": 83
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 139
+   "ms": 112
   },
   "GitHub": {
    "ok": true,
-   "count": 113,
-   "ms": 27472
+   "count": 117,
+   "ms": 28569
   },
   "Hacker News": {
    "ok": true,
    "count": 17,
-   "ms": 2230
+   "ms": 770
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 26,
-   "ms": 210
+   "ms": 169
   },
   "Google Research": {
    "ok": true,
    "count": 9,
-   "ms": 292
+   "ms": 270
   },
   "Google DeepMind": {
    "ok": true,
    "count": 11,
-   "ms": 119
+   "ms": 135
   },
   "OpenAI": {
    "ok": true,
-   "count": 85,
-   "ms": 110
+   "count": 83,
+   "ms": 114
   },
   "Microsoft Research": {
    "ok": true,
    "count": 9,
-   "ms": 746
+   "ms": 1051
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 152
+   "ms": 92
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 0,
-   "ms": 198
+   "ms": 218
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 228
+   "ms": 60
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 151
+   "ms": 79
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 139
+   "ms": 62
   },
   "Import AI": {
    "ok": false,
@@ -89,17 +89,13 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 114
+   "ms": 95
   },
   "AI summaries": {
    "ok": true,
-   "count": 33,
-   "requests": 4,
-   "errors": [
-    "Google Gemini / gemini-flash-lite-latest: HTTP 503",
-    "Google Gemini / gemini-3.5-flash-lite: HTTP 503"
-   ],
-   "model": "Google Gemini / gemini-3.1-flash-lite"
+   "count": 29,
+   "requests": 3,
+   "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
 }
