@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-11-09T06:43:49Z",
+ "generated_at": "2026-11-09T22:25:58Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 824
+   "ms": 591
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 112
+   "ms": 195
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 44
+   "ms": 80
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 54
+   "ms": 141
   },
   "GitHub": {
    "ok": true,
-   "count": 92,
-   "ms": 28391
+   "count": 100,
+   "ms": 28745
   },
   "Hacker News": {
    "ok": true,
-   "count": 11,
-   "ms": 618
+   "count": 18,
+   "ms": 735
   },
   "Hugging Face Blog": {
    "ok": true,
-   "count": 26,
-   "ms": 77
+   "count": 27,
+   "ms": 150
   },
   "Google Research": {
    "ok": true,
-   "count": 9,
-   "ms": 197
+   "count": 10,
+   "ms": 638
   },
   "Google DeepMind": {
-   "ok": true,
-   "count": 11,
-   "ms": 189
+   "ok": false,
+   "count": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   "OpenAI": {
    "ok": true,
-   "count": 80,
-   "ms": 124
+   "count": 84,
+   "ms": 234
   },
   "Microsoft Research": {
    "ok": true,
    "count": 9,
-   "ms": 594
+   "ms": 1119
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 98
+   "ms": 190
   },
   "Berkeley AI Research": {
    "ok": true,
-   "count": 0,
-   "ms": 495
+   "count": 1,
+   "ms": 53
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 59
+   "ms": 99
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 57
+   "ms": 81
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 102
+   "ms": 124
   },
   "Import AI": {
    "ok": false,
@@ -89,12 +89,12 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 73
+   "ms": 93
   },
   "AI summaries": {
    "ok": true,
-   "count": 157,
-   "requests": 17,
+   "count": 26,
+   "requests": 4,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
