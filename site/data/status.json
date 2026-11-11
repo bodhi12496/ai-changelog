@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-11-10T19:47:59Z",
+ "generated_at": "2026-11-11T06:33:52Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 1581
+   "ms": 661
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 161
+   "ms": 77
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 38
+   "ms": 24
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 82
+   "ms": 56
   },
   "GitHub": {
    "ok": true,
-   "count": 93,
-   "ms": 29127
+   "count": 89,
+   "ms": 27538
   },
   "Hacker News": {
    "ok": true,
-   "count": 16,
-   "ms": 611
+   "count": 17,
+   "ms": 535
   },
   "Hugging Face Blog": {
    "ok": true,
-   "count": 29,
-   "ms": 80
+   "count": 30,
+   "ms": 62
   },
   "Google Research": {
    "ok": true,
    "count": 10,
-   "ms": 343
+   "ms": 311
   },
   "Google DeepMind": {
    "ok": true,
    "count": 14,
-   "ms": 243
+   "ms": 224
   },
   "OpenAI": {
    "ok": true,
-   "count": 88,
-   "ms": 128
+   "count": 91,
+   "ms": 137
   },
   "Microsoft Research": {
    "ok": true,
-   "count": 9,
-   "ms": 512
+   "count": 10,
+   "ms": 664
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 214
+   "ms": 175
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 528
+   "ms": 610
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 37
+   "ms": 44
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 72
+   "ms": 59
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 158
+   "ms": 92
   },
   "Import AI": {
    "ok": false,
@@ -89,16 +89,13 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 103
+   "ms": 79
   },
   "AI summaries": {
    "ok": true,
-   "count": 74,
-   "requests": 8,
-   "errors": [
-    "Google Gemini / gemini-flash-lite-latest: HTTP 503"
-   ],
-   "model": "Google Gemini / gemini-3.5-flash-lite, Google Gemini / gemini-flash-lite-latest"
+   "count": 162,
+   "requests": 17,
+   "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
 }
