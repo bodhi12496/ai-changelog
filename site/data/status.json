@@ -1,45 +1,45 @@
 {
- "generated_at": "2026-11-11T19:39:31Z",
+ "generated_at": "2026-11-12T07:18:20Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 564
+   "ms": 494
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 165
+   "ms": 70
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 77
+   "ms": 21
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 141
+   "ms": 55
   },
   "GitHub": {
    "ok": true,
-   "count": 97,
-   "ms": 29381
+   "count": 94,
+   "ms": 27744
   },
   "Hacker News": {
    "ok": true,
-   "count": 17,
-   "ms": 862
+   "count": 23,
+   "ms": 532
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 31,
-   "ms": 164
+   "ms": 62
   },
   "Google Research": {
    "ok": true,
-   "count": 10,
-   "ms": 396
+   "count": 11,
+   "ms": 363
   },
   "Google DeepMind": {
    "ok": false,
@@ -49,37 +49,37 @@
   "OpenAI": {
    "ok": true,
    "count": 93,
-   "ms": 211
+   "ms": 196
   },
   "Microsoft Research": {
    "ok": true,
    "count": 9,
-   "ms": 1060
+   "ms": 608
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 186
+   "ms": 142
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 394
+   "ms": 621
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 129
+   "ms": 53
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 103
+   "ms": 43
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 227
+   "ms": 108
   },
   "Import AI": {
    "ok": false,
@@ -89,13 +89,16 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 118
+   "ms": 73
   },
   "AI summaries": {
    "ok": true,
-   "count": 25,
+   "count": 22,
    "requests": 4,
-   "model": "Google Gemini / gemini-flash-lite-latest"
+   "errors": [
+    "Google Gemini / gemini-flash-lite-latest: HTTP 503"
+   ],
+   "model": "Google Gemini / gemini-3.5-flash-lite, Google Gemini / gemini-flash-lite-latest"
   }
  }
 }
