@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-11-13T06:52:02Z",
+ "generated_at": "2026-11-13T19:47:32Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 981
+   "ms": 596
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 145
+   "ms": 151
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 84
+   "ms": 78
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 264
+   "ms": 133
   },
   "GitHub": {
    "ok": true,
-   "count": 90,
-   "ms": 28282
+   "count": 94,
+   "ms": 30943
   },
   "Hacker News": {
    "ok": true,
-   "count": 23,
-   "ms": 689
+   "count": 19,
+   "ms": 766
   },
   "Hugging Face Blog": {
    "ok": true,
-   "count": 32,
-   "ms": 153
+   "count": 33,
+   "ms": 147
   },
   "Google Research": {
    "ok": true,
-   "count": 11,
-   "ms": 336
+   "count": 8,
+   "ms": 399
   },
   "Google DeepMind": {
    "ok": true,
-   "count": 12,
-   "ms": 310
+   "count": 13,
+   "ms": 174
   },
   "OpenAI": {
    "ok": true,
-   "count": 95,
-   "ms": 124
+   "count": 92,
+   "ms": 152
   },
   "Microsoft Research": {
    "ok": true,
    "count": 10,
-   "ms": 674
+   "ms": 545
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 97
+   "ms": 218
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 61
+   "ms": 420
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 76
+   "ms": 124
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 164
+   "ms": 102
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 118
+   "ms": 158
   },
   "Import AI": {
    "ok": false,
@@ -89,21 +89,13 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 112
+   "ms": 218
   },
   "AI summaries": {
    "ok": true,
-   "count": 54,
-   "note": "stopped early (rate limit or provider unavailable)",
-   "requests": 6,
-   "errors": [
-    "Google Gemini / gemini-flash-lite-latest: HTTP 503",
-    "Google Gemini / gemini-3.5-flash-lite: HTTP 503",
-    "Google Gemini / gemini-3.1-flash-lite: HTTP 503",
-    "Google Gemini / gemini-flash-latest: HTTP 503",
-    "Google Gemini: no working models left"
-   ],
-   "model": "Google Gemini / gemini-3.5-flash-lite, Google Gemini / gemini-flash-lite-latest"
+   "count": 169,
+   "requests": 18,
+   "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
 }
