@@ -1,100 +1,100 @@
 {
- "generated_at": "2026-11-17T07:59:45Z",
+ "generated_at": "2026-11-17T20:59:28Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 1175
+   "ms": 497
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 102
+   "ms": 51
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 34
+   "ms": 21
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 76
+   "ms": 60
   },
   "GitHub": {
    "ok": true,
-   "count": 93,
-   "ms": 27855
+   "count": 101,
+   "ms": 28202
   },
   "Hacker News": {
    "ok": true,
-   "count": 8,
-   "ms": 8363
+   "count": 13,
+   "ms": 504
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 30,
-   "ms": 81
+   "ms": 57
   },
   "Google Research": {
    "ok": true,
    "count": 8,
-   "ms": 463
+   "ms": 285
   },
   "Google DeepMind": {
-   "ok": true,
-   "count": 12,
-   "ms": 96
+   "ok": false,
+   "count": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   "OpenAI": {
    "ok": true,
-   "count": 98,
-   "ms": 120
+   "count": 103,
+   "ms": 90
   },
   "Microsoft Research": {
    "ok": true,
    "count": 10,
-   "ms": 843
+   "ms": 4122
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 78
+   "ms": 43
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 536
+   "ms": 908
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 44
+   "ms": 18
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 61
+   "ms": 16
   },
   "Ahead of AI": {
    "ok": true,
    "count": 2,
-   "ms": 142
+   "ms": 62
   },
   "Import AI": {
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "ok": true,
+   "count": 5,
+   "ms": 46
   },
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 117
+   "ms": 446
   },
   "AI summaries": {
    "ok": true,
-   "count": 165,
-   "requests": 17,
+   "count": 27,
+   "requests": 5,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
