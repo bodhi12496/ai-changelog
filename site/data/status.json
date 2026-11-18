@@ -1,100 +1,100 @@
 {
- "generated_at": "2026-11-17T20:59:28Z",
+ "generated_at": "2026-11-18T07:36:37Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 497
+   "ms": 804
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 51
+   "ms": 259
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 21
+   "ms": 96
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 60
+   "ms": 226
   },
   "GitHub": {
    "ok": true,
-   "count": 101,
-   "ms": 28202
+   "count": 97,
+   "ms": 28274
   },
   "Hacker News": {
    "ok": true,
-   "count": 13,
-   "ms": 504
+   "count": 15,
+   "ms": 634
   },
   "Hugging Face Blog": {
    "ok": true,
-   "count": 30,
-   "ms": 57
+   "count": 29,
+   "ms": 161
   },
   "Google Research": {
    "ok": true,
    "count": 8,
-   "ms": 285
+   "ms": 338
   },
   "Google DeepMind": {
-   "ok": false,
-   "count": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "ok": true,
+   "count": 12,
+   "ms": 234
   },
   "OpenAI": {
    "ok": true,
-   "count": 103,
-   "ms": 90
+   "count": 104,
+   "ms": 137
   },
   "Microsoft Research": {
    "ok": true,
    "count": 10,
-   "ms": 4122
+   "ms": 582
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 43
+   "ms": 84
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 908
+   "ms": 219
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 18
+   "ms": 83
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 16
+   "ms": 70
   },
   "Ahead of AI": {
    "ok": true,
    "count": 2,
-   "ms": 62
+   "ms": 155
   },
   "Import AI": {
    "ok": true,
    "count": 5,
-   "ms": 46
+   "ms": 66
   },
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 446
+   "ms": 71
   },
   "AI summaries": {
    "ok": true,
-   "count": 27,
-   "requests": 5,
+   "count": 161,
+   "requests": 17,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
