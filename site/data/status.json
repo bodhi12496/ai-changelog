@@ -1,100 +1,100 @@
 {
- "generated_at": "2026-11-18T07:36:37Z",
+ "generated_at": "2026-11-18T20:37:08Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 804
+   "ms": 928
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 259
+   "ms": 72
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 96
+   "ms": 22
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 226
+   "ms": 68
   },
   "GitHub": {
    "ok": true,
-   "count": 97,
-   "ms": 28274
+   "count": 101,
+   "ms": 28290
   },
   "Hacker News": {
    "ok": true,
-   "count": 15,
-   "ms": 634
+   "count": 20,
+   "ms": 483
   },
   "Hugging Face Blog": {
    "ok": true,
-   "count": 29,
-   "ms": 161
+   "count": 34,
+   "ms": 62
   },
   "Google Research": {
    "ok": true,
    "count": 8,
-   "ms": 338
+   "ms": 423
   },
   "Google DeepMind": {
    "ok": true,
-   "count": 12,
-   "ms": 234
+   "count": 13,
+   "ms": 432
   },
   "OpenAI": {
    "ok": true,
-   "count": 104,
-   "ms": 137
+   "count": 108,
+   "ms": 95
   },
   "Microsoft Research": {
    "ok": true,
    "count": 10,
-   "ms": 582
+   "ms": 519
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 84
+   "ms": 135
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 219
+   "ms": 535
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 83
+   "ms": 56
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 70
+   "ms": 39
   },
   "Ahead of AI": {
    "ok": true,
    "count": 2,
-   "ms": 155
+   "ms": 89
   },
   "Import AI": {
-   "ok": true,
-   "count": 5,
-   "ms": 66
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 71
+   "ms": 239
   },
   "AI summaries": {
    "ok": true,
-   "count": 161,
-   "requests": 17,
+   "count": 22,
+   "requests": 3,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
