@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-11-19T07:32:05Z",
+ "generated_at": "2026-11-19T20:42:39Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 469
+   "ms": 1050
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 166
+   "ms": 86
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 38
+   "ms": 26
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 69
+   "ms": 33
   },
   "GitHub": {
    "ok": true,
    "count": 98,
-   "ms": 28215
+   "ms": 28515
   },
   "Hacker News": {
    "ok": true,
-   "count": 25,
-   "ms": 663
+   "count": 27,
+   "ms": 538
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 31,
-   "ms": 77
+   "ms": 69
   },
   "Google Research": {
    "ok": true,
-   "count": 8,
-   "ms": 553
+   "count": 9,
+   "ms": 298
   },
   "Google DeepMind": {
    "ok": true,
    "count": 14,
-   "ms": 92
+   "ms": 110
   },
   "OpenAI": {
    "ok": true,
    "count": 108,
-   "ms": 107
+   "ms": 89
   },
   "Microsoft Research": {
    "ok": true,
    "count": 10,
-   "ms": 1877
+   "ms": 462
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 75
+   "ms": 144
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 591
+   "ms": 555
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 48
+   "ms": 57
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 57
+   "ms": 22
   },
   "Ahead of AI": {
    "ok": true,
    "count": 2,
-   "ms": 118
+   "ms": 114
   },
   "Import AI": {
    "ok": false,
@@ -89,16 +89,13 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 93
+   "ms": 146
   },
   "AI summaries": {
    "ok": true,
-   "count": 161,
-   "requests": 17,
-   "errors": [
-    "Google Gemini / gemini-flash-lite-latest: HTTP 503"
-   ],
-   "model": "Google Gemini / gemini-3.5-flash-lite, Google Gemini / gemini-flash-lite-latest"
+   "count": 21,
+   "requests": 3,
+   "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
 }
