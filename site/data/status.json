@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-11-18T20:37:08Z",
+ "generated_at": "2026-11-19T07:32:05Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 928
+   "ms": 469
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 72
+   "ms": 166
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 22
+   "ms": 38
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 68
+   "ms": 69
   },
   "GitHub": {
    "ok": true,
-   "count": 101,
-   "ms": 28290
+   "count": 98,
+   "ms": 28215
   },
   "Hacker News": {
    "ok": true,
-   "count": 20,
-   "ms": 483
+   "count": 25,
+   "ms": 663
   },
   "Hugging Face Blog": {
    "ok": true,
-   "count": 34,
-   "ms": 62
+   "count": 31,
+   "ms": 77
   },
   "Google Research": {
    "ok": true,
    "count": 8,
-   "ms": 423
+   "ms": 553
   },
   "Google DeepMind": {
    "ok": true,
-   "count": 13,
-   "ms": 432
+   "count": 14,
+   "ms": 92
   },
   "OpenAI": {
    "ok": true,
    "count": 108,
-   "ms": 95
+   "ms": 107
   },
   "Microsoft Research": {
    "ok": true,
    "count": 10,
-   "ms": 519
+   "ms": 1877
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 135
+   "ms": 75
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 535
+   "ms": 591
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 56
+   "ms": 48
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 39
+   "ms": 57
   },
   "Ahead of AI": {
    "ok": true,
    "count": 2,
-   "ms": 89
+   "ms": 118
   },
   "Import AI": {
    "ok": false,
@@ -89,13 +89,16 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 239
+   "ms": 93
   },
   "AI summaries": {
    "ok": true,
-   "count": 22,
-   "requests": 3,
-   "model": "Google Gemini / gemini-flash-lite-latest"
+   "count": 161,
+   "requests": 17,
+   "errors": [
+    "Google Gemini / gemini-flash-lite-latest: HTTP 503"
+   ],
+   "model": "Google Gemini / gemini-3.5-flash-lite, Google Gemini / gemini-flash-lite-latest"
   }
  }
 }
