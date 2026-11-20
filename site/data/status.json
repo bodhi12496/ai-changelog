@@ -1,100 +1,100 @@
 {
- "generated_at": "2026-11-20T07:24:13Z",
+ "generated_at": "2026-11-20T20:27:10Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 666
+   "ms": 716
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 152
+   "ms": 63
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 96
+   "ms": 22
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 209
+   "ms": 32
   },
   "GitHub": {
    "ok": true,
-   "count": 98,
-   "ms": 28087
+   "count": 103,
+   "ms": 28274
   },
   "Hacker News": {
    "ok": true,
-   "count": 26,
-   "ms": 571
+   "count": 27,
+   "ms": 633
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 31,
-   "ms": 214
+   "ms": 55
   },
   "Google Research": {
    "ok": true,
-   "count": 9,
-   "ms": 375
+   "count": 8,
+   "ms": 424
   },
   "Google DeepMind": {
-   "ok": false,
-   "count": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "ok": true,
+   "count": 14,
+   "ms": 157
   },
   "OpenAI": {
    "ok": true,
-   "count": 107,
-   "ms": 137
+   "count": 106,
+   "ms": 93
   },
   "Microsoft Research": {
    "ok": true,
-   "count": 10,
-   "ms": 1521
+   "count": 9,
+   "ms": 852
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 80
+   "ms": 38
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 433
+   "ms": 1007
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 50
+   "ms": 14
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 55
+   "ms": 22
   },
   "Ahead of AI": {
    "ok": true,
    "count": 2,
-   "ms": 158
+   "ms": 61
   },
   "Import AI": {
    "ok": true,
    "count": 4,
-   "ms": 59
+   "ms": 191
   },
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 114
+   "ms": 80
   },
   "AI summaries": {
    "ok": true,
-   "count": 162,
-   "requests": 18,
+   "count": 27,
+   "requests": 3,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
