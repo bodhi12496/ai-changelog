@@ -1,99 +1,99 @@
 {
- "generated_at": "2026-11-20T20:27:10Z",
+ "generated_at": "2026-11-21T07:16:56Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 716
+   "ms": 511
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 63
+   "ms": 108
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 22
+   "ms": 31
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 32
+   "ms": 59
   },
   "GitHub": {
    "ok": true,
-   "count": 103,
-   "ms": 28274
+   "count": 94,
+   "ms": 28009
   },
   "Hacker News": {
    "ok": true,
-   "count": 27,
-   "ms": 633
+   "count": 22,
+   "ms": 1317
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 31,
-   "ms": 55
+   "ms": 97
   },
   "Google Research": {
    "ok": true,
-   "count": 8,
-   "ms": 424
+   "count": 9,
+   "ms": 320
   },
   "Google DeepMind": {
-   "ok": true,
-   "count": 14,
-   "ms": 157
+   "ok": false,
+   "count": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   "OpenAI": {
    "ok": true,
-   "count": 106,
-   "ms": 93
+   "count": 104,
+   "ms": 137
   },
   "Microsoft Research": {
    "ok": true,
    "count": 9,
-   "ms": 852
+   "ms": 861
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 38
+   "ms": 97
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 1007
+   "ms": 572
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 14
+   "ms": 41
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 22
+   "ms": 59
   },
   "Ahead of AI": {
    "ok": true,
    "count": 2,
-   "ms": 61
+   "ms": 156
   },
   "Import AI": {
-   "ok": true,
-   "count": 4,
-   "ms": 191
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 80
+   "ms": 82
   },
   "AI summaries": {
    "ok": true,
-   "count": 27,
+   "count": 24,
    "requests": 3,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
