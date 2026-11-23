@@ -1,85 +1,85 @@
 {
- "generated_at": "2026-11-23T07:46:43Z",
+ "generated_at": "2026-11-23T23:57:58Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 741
+   "ms": 627
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 105
+   "ms": 62
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 41
+   "ms": 23
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 61
+   "ms": 39
   },
   "GitHub": {
    "ok": true,
-   "count": 88,
-   "ms": 28451
+   "count": 102,
+   "ms": 27964
   },
   "Hacker News": {
    "ok": true,
-   "count": 11,
-   "ms": 546
+   "count": 10,
+   "ms": 590
   },
   "Hugging Face Blog": {
    "ok": true,
-   "count": 29,
-   "ms": 95
+   "count": 30,
+   "ms": 58
   },
   "Google Research": {
    "ok": true,
-   "count": 8,
-   "ms": 186
+   "count": 9,
+   "ms": 1343
   },
   "Google DeepMind": {
-   "ok": false,
-   "count": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "ok": true,
+   "count": 14,
+   "ms": 54
   },
   "OpenAI": {
    "ok": true,
-   "count": 100,
-   "ms": 136
+   "count": 103,
+   "ms": 84
   },
   "Microsoft Research": {
    "ok": true,
    "count": 8,
-   "ms": 585
+   "ms": 598
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 138
+   "ms": 126
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 493
+   "ms": 544
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 43
+   "ms": 57
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 43
+   "ms": 53
   },
   "Ahead of AI": {
    "ok": true,
-   "count": 2,
-   "ms": 83
+   "count": 1,
+   "ms": 70
   },
   "Import AI": {
    "ok": false,
@@ -89,12 +89,12 @@
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 75
+   "ms": 83
   },
   "AI summaries": {
    "ok": true,
-   "count": 170,
-   "requests": 18,
+   "count": 45,
+   "requests": 6,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
