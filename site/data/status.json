@@ -1,104 +1,101 @@
 {
- "generated_at": "2026-11-25T08:43:27Z",
+ "generated_at": "2026-11-25T21:45:25Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 915
+   "ms": 1418
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 146
+   "ms": 219
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 106
+   "ms": 115
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 124
+   "ms": 130
   },
   "GitHub": {
    "ok": true,
-   "count": 76,
-   "ms": 29472
+   "count": 77,
+   "ms": 27789
   },
   "Hacker News": {
    "ok": true,
-   "count": 16,
-   "ms": 649
+   "count": 19,
+   "ms": 687
   },
   "Hugging Face Blog": {
    "ok": true,
-   "count": 30,
-   "ms": 193
+   "count": 31,
+   "ms": 163
   },
   "Google Research": {
    "ok": true,
-   "count": 9,
-   "ms": 389
+   "count": 10,
+   "ms": 614
   },
   "Google DeepMind": {
-   "ok": false,
-   "count": 0,
-   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
+   "ok": true,
+   "count": 15,
+   "ms": 158
   },
   "OpenAI": {
    "ok": true,
-   "count": 106,
-   "ms": 127
+   "count": 102,
+   "ms": 138
   },
   "Microsoft Research": {
    "ok": true,
    "count": 8,
-   "ms": 553
+   "ms": 699
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 75
+   "ms": 168
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 333
+   "ms": 372
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 70
+   "ms": 235
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 31
+   "ms": 224
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 112
+   "ms": 161
   },
   "Import AI": {
-   "ok": true,
-   "count": 5,
-   "ms": 62
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 69
+   "ms": 124
   },
   "AI summaries": {
    "ok": true,
-   "count": 161,
-   "requests": 17,
-   "errors": [
-    "Google Gemini / gemini-flash-lite-latest: HTTP 503"
-   ],
-   "model": "Google Gemini / gemini-3.5-flash-lite"
+   "count": 19,
+   "requests": 3,
+   "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
 }
