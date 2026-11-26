@@ -1,100 +1,100 @@
 {
- "generated_at": "2026-11-26T08:28:09Z",
+ "generated_at": "2026-11-26T21:38:53Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 1976
+   "ms": 1445
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 192
+   "ms": 215
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 111
+   "ms": 103
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 166
+   "ms": 131
   },
   "GitHub": {
    "ok": true,
-   "count": 79,
-   "ms": 27568
+   "count": 82,
+   "ms": 27733
   },
   "Hacker News": {
    "ok": true,
-   "count": 23,
-   "ms": 666
+   "count": 16,
+   "ms": 784
   },
   "Hugging Face Blog": {
    "ok": true,
    "count": 31,
-   "ms": 204
+   "ms": 189
   },
   "Google Research": {
    "ok": true,
-   "count": 10,
-   "ms": 351
+   "count": 9,
+   "ms": 509
   },
   "Google DeepMind": {
-   "ok": true,
-   "count": 15,
-   "ms": 293
+   "ok": false,
+   "count": 0,
+   "error": "ParseError: not well-formed (invalid token): line 1, column 0"
   },
   "OpenAI": {
    "ok": true,
-   "count": 99,
-   "ms": 123
+   "count": 98,
+   "ms": 157
   },
   "Microsoft Research": {
    "ok": true,
    "count": 8,
-   "ms": 434
+   "ms": 605
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 186
+   "ms": 82
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 251
+   "ms": 308
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 231
+   "ms": 45
   },
   "KDnuggets": {
    "ok": true,
    "count": 10,
-   "ms": 172
+   "ms": 77
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 187
+   "ms": 132
   },
   "Import AI": {
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "ok": true,
+   "count": 4,
+   "ms": 60
   },
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 127
+   "ms": 52
   },
   "AI summaries": {
    "ok": true,
-   "count": 154,
-   "requests": 16,
+   "count": 10,
+   "requests": 2,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
  }
