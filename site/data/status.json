@@ -1,45 +1,45 @@
 {
- "generated_at": "2026-11-27T21:23:08Z",
+ "generated_at": "2026-11-28T07:55:52Z",
  "sources": {
   "arXiv": {
    "ok": true,
    "count": 150,
-   "ms": 563
+   "ms": 620
   },
   "Hugging Face Papers": {
    "ok": true,
    "count": 50,
-   "ms": 79
+   "ms": 139
   },
   "Hugging Face Models": {
    "ok": true,
    "count": 40,
-   "ms": 34
+   "ms": 104
   },
   "Hugging Face Spaces": {
    "ok": true,
    "count": 30,
-   "ms": 61
+   "ms": 136
   },
   "GitHub": {
    "ok": true,
-   "count": 82,
-   "ms": 27397
+   "count": 85,
+   "ms": 27452
   },
   "Hacker News": {
    "ok": true,
-   "count": 17,
-   "ms": 537
+   "count": 14,
+   "ms": 598
   },
   "Hugging Face Blog": {
    "ok": true,
-   "count": 32,
-   "ms": 111
+   "count": 29,
+   "ms": 221
   },
   "Google Research": {
    "ok": true,
    "count": 9,
-   "ms": 292
+   "ms": 323
   },
   "Google DeepMind": {
    "ok": false,
@@ -48,52 +48,52 @@
   },
   "OpenAI": {
    "ok": true,
-   "count": 94,
-   "ms": 133
+   "count": 92,
+   "ms": 129
   },
   "Microsoft Research": {
    "ok": true,
    "count": 8,
-   "ms": 165
+   "ms": 438
   },
   "AWS Machine Learning": {
    "ok": true,
    "count": 20,
-   "ms": 154
+   "ms": 76
   },
   "Berkeley AI Research": {
    "ok": true,
    "count": 1,
-   "ms": 506
+   "ms": 287
   },
   "MIT Technology Review": {
    "ok": true,
    "count": 10,
-   "ms": 71
+   "ms": 58
   },
   "KDnuggets": {
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "ok": true,
+   "count": 10,
+   "ms": 66
   },
   "Ahead of AI": {
    "ok": true,
    "count": 1,
-   "ms": 121
+   "ms": 112
   },
   "Import AI": {
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "ok": true,
+   "count": 4,
+   "ms": 60
   },
   "Simon Willison": {
    "ok": true,
    "count": 30,
-   "ms": 74
+   "ms": 82
   },
   "AI summaries": {
    "ok": true,
-   "count": 12,
+   "count": 25,
    "requests": 3,
    "model": "Google Gemini / gemini-flash-lite-latest"
   }
